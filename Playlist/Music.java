@@ -14,7 +14,7 @@ public class Music {
         this.numberOfStream = 0;
         allMusics.add(this);
     }
-    private void play(){
+    void play(){
         System.out.println("Music: " + this.title + "\nSinger: " + this.singer + "\nPlayed: " + this.numberOfStream);
         this.numberOfStream++;
     }
