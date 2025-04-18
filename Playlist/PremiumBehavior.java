@@ -27,6 +27,6 @@ public class PremiumBehavior implements UserBehavior{
 
     @Override
     public void buyPremium(User owner, int month) {
-        endDate.plusMonths(month);
+        this.endDate = this.endDate.plusMonths(month);
     }
 }
