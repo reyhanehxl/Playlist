@@ -15,7 +15,7 @@ public class RegularBehavior implements UserBehavior{
            throw new InvalidOperationException("Limit reached.Upgrade to get more!");
         }
         playingLimit--;
-            // play the music
+        music.play();
     }
 
     @Override
