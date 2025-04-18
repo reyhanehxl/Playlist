@@ -39,10 +39,12 @@ public class Playlist {
             if (!owner.getPassword().equals(password)) {
                 throw new InvalidOperationException("Invalid password");
             }
-            for (Music musicX : playlist) {
-                if (musicX.equals(music))
-                    playlist.remove(musicX);
+        for (int i = 0; i < playlist.size(); i++) {
+            if (playlist.get(i).equals(music)) {
+                playlist.remove(i);
+                break;
             }
+        }
     }
 
     private Music searchInPlaylist(String name){
