@@ -8,7 +8,7 @@ public class PremiumBehavior implements UserBehavior{
     LocalDate endDate = today.plusMonths(month);
 
     @Override
-    public void createPlaylist(String Title, User Owner) {
+    public void createPlaylist(String title, User Owner) {
         Playlist playlist = new Playlist(title, Owner);
         Owner.addPlaylist(playlist);
     }
