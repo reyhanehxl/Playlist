@@ -20,6 +20,6 @@ public class RegularBehavior implements UserBehavior{
 
     @Override
     public void buyPremium(User owner, int month) {
-
+        owner.setBehavior(new PremiumBehavior(owner,month));
     }
 }
