@@ -20,11 +20,14 @@ public class User {
         this.followingList = new ArrayList<>();
         allUsers.add(this);
     }
+    void addPlaylist(Playlist playlist){
+        playlists.add(playlist);
+    }
     private void follow (User user){
         this.followingList.add(user);
         user.followerList.add(this);
     }
-    private void createPlaylist(String title, User Owner){
+    void createPlaylist(String title, User Owner){
         this.behavior.createPlaylist(title, Owner);
     }
     private void playMusic (Music music){
