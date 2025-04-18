@@ -15,6 +15,9 @@ public class User {
         this.setUsername(username);
         this.setPassword(password);
         this.behavior = new RegularBehavior();
+        this.playlists = new ArrayList<>();
+        this.followerList = new ArrayList<>();
+        this.followingList = new ArrayList<>();
         allUsers.add(this);
     }
     private void follow (User user){
