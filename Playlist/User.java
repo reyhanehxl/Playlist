@@ -27,14 +27,14 @@ public class User {
         this.followingList.add(user);
         user.followerList.add(this);
     }
-    public void createPlaylist(String title, User Owner){
-        this.behavior.createPlaylist(title, Owner);
+    public void createPlaylist(String title){
+        this.behavior.createPlaylist(title,this);
     }
     public void playMusic(Music music){
         this.behavior.playMusic(music);
     }
-    public void buyPremium(User owner, int month){
-        this.behavior.buyPremium(owner, month);
+    public void buyPremium( int month){
+        this.behavior.buyPremium(this, month);
     }
 
     public String getUsername() {

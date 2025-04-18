@@ -18,12 +18,12 @@ import Playlist.User;
                     user1.playMusic(song1);
                     user1.playMusic(song2);
                     user1.playMusic(song1);
-                    user1.buyPremium(user1, 2);
+                    user1.buyPremium( 2);
                     System.out.println("Upgraded to premium");
 
                     user1.playMusic(song2);
 
-                    user1.createPlaylist("Sisi's Hits", user1);
+                    user1.createPlaylist("Sisi's Hits");
                     System.out.println("Playlist created.");
 
                 } catch (InvalidOperationException e) {
